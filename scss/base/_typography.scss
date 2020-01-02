@@ -21,15 +21,17 @@ a {
 /*              Typography                       */
 /* ============================================= */
 
-.headline-primary {
-  color: #58e1c1;
+.headline {
+  &-primary {
+    color: #58e1c1;
   margin-left: 10px;
+  }
+  &-secondary {
+    font-weight: 300;
+    color: #777;  
+  }
 }
 
-.headline-secondary {
-  font-weight: 300;
-  color: #777;
-}
 
 .link {
   color: #51ddfc;
