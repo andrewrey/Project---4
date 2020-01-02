@@ -4,7 +4,7 @@
 
 * {
   font-family: 'Lato', sans-serif;
-  color: #777;
+  color: $font-base-color;
   box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ a {
   }
   &-secondary {
     font-weight: 300;
-    color: #777;  
+    color: $font-base-color;  
   }
 }
 
