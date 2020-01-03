@@ -2,65 +2,6 @@
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-
-  .row {
-    flex-direction: row; }
-
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center; }
-
-  [class^=col] + [class^=col] {
-    margin-left: 10px; }
-
-  .col-1 {
-    flex-basis: 8.33%; }
-
-  .col-2 {
-    flex-basis: 16.67%; }
-
-  .col-3 {
-    flex-basis: 25.00%; }
-
-  .col-4 {
-    flex-basis: 33.33%; }
-
-  .col-5 {
-    flex-basis: 41.67%; }
-
-  .col-6 {
-    flex-basis: 50.00%; }
-
-  .col-7 {
-    flex-basis: 58.33%; }
-
-  .col-8 {
-    flex-basis: 66.67%; }
-
-  .col-9 {
-    flex-basis: 75%; }
-
-  .col-10 {
-    flex-basis: 83.33%; }
-
-  .col-11 {
-    flex-basis: 91.67%; }
-
-  .col-12 {
-    flex-basis: 100%; }
-
   .nav {
     flex-direction: row;
     justify-content: flex-end;
@@ -387,7 +328,7 @@ template {
 /*              Base styles                      */
 /* ============================================= */
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #777;
   box-sizing: border-box; }
 
@@ -428,6 +369,11 @@ a {
   flex-basis: 100%;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 768px) {
+    .nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; } }
   .nav-link {
     text-align: center;
     border-radius: 5px;
@@ -435,6 +381,9 @@ a {
     display: block;
     width: 100%;
     transition: background-color .2s ease-in-out, color .2s ease-in-out; }
+    @media (min-width: 768px) {
+      .nav-link {
+        flex-basis: 100px; } }
     .nav-link:hover {
       color: #fff;
       background-color: #58e1c1; }
@@ -443,24 +392,24 @@ a {
 /*              Images                           */
 /* ============================================= */
 .img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
+  max-height: 100%;
   max-width: 100%;
-  max-height: 100%; }
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
 .img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 10px;
-  max-width: 100%;
   padding: 13px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
 .img-logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto; }
 
 /* ============================================= */
 /*              Buttons                          */
@@ -516,11 +465,20 @@ a {
 /* ============================================= */
 .container {
   padding: 0 10px; }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 1400px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto; } }
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px; }
+  @media (min-width: 768px) {
+    .row {
+      flex-direction: row; } }
 
 [class^=col] {
   margin-top: 10px;
@@ -528,6 +486,15 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px; }
+  @media (min-width: 768px) {
+    [class^=col] {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center; } }
+  @media (min-width: 768px) {
+    [class^=col] + [class^=col] {
+      margin-left: 10px; } }
 
 .theme.col-1 {
   background-color: #927bc1; }
@@ -564,6 +531,60 @@ a {
 
 .theme.col-12 {
   background-color: #80e8d1; }
+
+@media (min-width: 768px) {
+  .col-1 {
+    flex-basis: 8.33%; } }
+
+@media (min-width: 768px) {
+  .col-2 {
+    flex-basis: 16.67%; } }
+
+@media (min-width: 768px) {
+  .col-3 {
+    flex-basis: 25%; } }
+
+@media (min-width: 768px) {
+  .col-4 {
+    flex-basis: 33.33%; } }
+
+@media (min-width: 768px) {
+  .col-5 {
+    flex-basis: 41.67%; } }
+
+@media (min-width: 768px) {
+  .col-6 {
+    flex-basis: 50%; } }
+
+@media (min-width: 768px) {
+  .col-7 {
+    flex-basis: 58.33%; } }
+
+@media (min-width: 768px) {
+  .col-8 {
+    flex-basis: 66.67%; } }
+
+@media (min-width: 768px) {
+  .col-9 {
+    flex-basis: 75%; } }
+
+@media (min-width: 768px) {
+  .col-10 {
+    flex-basis: 83.33%; } }
+
+@media (min-width: 768px) {
+  .col-11 {
+    flex-basis: 91.67%; } }
+
+@media (min-width: 768px) {
+  .col-12 {
+    flex-basis: 100%; } }
+
+@media (min-width: 768px) {
+  .centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; } }
 
 .card {
   flex-basis: 100%; }

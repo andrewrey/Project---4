@@ -4,12 +4,18 @@
 
 .container {
   padding: 0 10px;
+  @include mq($break) {
+    @include center-block($w:1400px);
+  }
 }
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
+  @include mq($break){
+    flex-direction: row;
+  }
 }
 
 [class^=col] {
@@ -18,12 +24,38 @@
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+  @include mq($break){
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  & + & {
+    @include mq($break) {
+      margin-left: 10px;
+    }
+  }
 }
 
 
 @for $i from 1 through 12 {
   .theme.col-#{$i} {
     background-color: map-get($col-background-colors, 'col-#{$i}');
+  }
+}
+
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include mq($break){
+      flex-basis: map-get($basis, 'col-#{$i}');
+    }
+  }
+}
+
+.centered {
+  @include mq($break) {
+    @include center-block;
   }
 }
 
