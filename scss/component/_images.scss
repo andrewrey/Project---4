@@ -20,4 +20,9 @@
   }
 }
 
-
+.logo {
+  @include mq($break){
+    margin-left: initial;
+    margin-right: initial;
+  }
+}

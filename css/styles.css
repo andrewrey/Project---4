@@ -1,24 +1,6 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center; }
-
-  .nav-link {
-    flex-basis: 100px; }
-
-  .btn {
-    padding: 10px 30px; }
-
-  .btn + .btn {
-    margin-left: 10px; }
-
-  .logo {
-    margin-left: initial;
-    margin-right: initial; } }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -362,105 +344,6 @@ a {
   border-radius: 5px; }
 
 /* ============================================= */
-/*              Navigation                       */
-/* ============================================= */
-.nav {
-  padding-left: 0;
-  flex-basis: 100%;
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 768px) {
-    .nav {
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center; } }
-  .nav-link {
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px 0;
-    display: block;
-    width: 100%;
-    transition: background-color .2s ease-in-out, color .2s ease-in-out; }
-    @media (min-width: 768px) {
-      .nav-link {
-        flex-basis: 100px; } }
-    .nav-link:hover {
-      color: #fff;
-      background-color: #58e1c1; }
-
-/* ============================================= */
-/*              Images                           */
-/* ============================================= */
-.img-avatar {
-  margin-top: 10px;
-  max-height: 100%;
-  max-width: 100%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto; }
-.img-frame {
-  margin-top: 10px;
-  padding: 13px;
-  border: 1px solid #ccc;
-  max-width: 100%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto; }
-.img-logo {
-  display: block;
-  margin-right: auto;
-  margin-left: auto; }
-
-/* ============================================= */
-/*              Buttons                          */
-/* ============================================= */
-.btn {
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px; }
-
-.default {
-  background-color: #51ddfc; }
-
-.error {
-  background-color: #e4757a; }
-
-.info {
-  background-color: #927bc1; }
-
-.success {
-  background-color: #63cc82; }
-
-.warning {
-  background-color: #fd7856; }
-
-/* ============================================= */
-/*              Forms                            */
-/* ============================================= */
-.form {
-  flex-basis: 100%; }
-
-.input {
-  display: block;
-  width: 94%;
-  margin: 10px auto 0;
-  border: none;
-  padding: 10px;
-  border-bottom: 5px solid #58e1c1; }
-
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden; }
-
-/* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
 .container {
@@ -588,5 +471,130 @@ a {
 
 .card {
   flex-basis: 100%; }
+
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+.nav {
+  padding-left: 0;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; } }
+  .nav-link {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out; }
+    @media (min-width: 768px) {
+      .nav-link {
+        flex-basis: 100px; } }
+    .nav-link:hover {
+      color: #fff;
+      background-color: #58e1c1; }
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px; }
+  @media (min-width: 768px) {
+    .btn {
+      padding: 10px 30px; } }
+  @media (min-width: 768px) {
+    .btn + .btn {
+      margin-left: 10px; } }
+
+.default {
+  background-color: #51ddfc; }
+
+.default:hover {
+  background-color: #9cecfd; }
+
+.error {
+  background-color: #e4757a; }
+
+.error:hover {
+  background-color: #f1b5b8; }
+
+.info {
+  background-color: #927bc1; }
+
+.info:hover {
+  background-color: #bdafd9; }
+
+.success {
+  background-color: #63cc82; }
+
+.success:hover {
+  background-color: #9ddfb0; }
+
+.warning {
+  background-color: #fd7856; }
+
+.warning:hover {
+  background-color: #feb4a2; }
+
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+.form {
+  flex-basis: 100%; }
+
+.input {
+  display: block;
+  width: 94%;
+  margin: 10px auto 0;
+  border: none;
+  padding: 10px;
+  border-bottom: 5px solid #58e1c1; }
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+.img-avatar {
+  margin-top: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+.img-frame {
+  margin-top: 10px;
+  padding: 13px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+.img-logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .logo {
+    margin-left: initial;
+    margin-right: initial; } }
 
 /*# sourceMappingURL=styles.css.map */

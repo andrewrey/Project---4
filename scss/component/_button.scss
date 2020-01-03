@@ -10,10 +10,21 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+  @include mq($break){
+    padding: 10px 30px;
+  }
+  & + & {
+    @include mq($break){
+      margin-left: 10px;
+    }
+  }
 }
 
 @each $button in $buttons{
   .#{$button} {
     background-color: map-get($map: $button-colors, $key:#{$button} );
+  }
+  .#{$button}:hover {
+    background-color: lighten(map-get($map: $button-colors, $key: #{$button} ), 15%);
   }
 }
