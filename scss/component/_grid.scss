@@ -18,6 +18,12 @@
   }
 }
 
+.centered {
+  @include mq($break) {
+    @include center-block;
+  }
+}
+
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -53,11 +59,6 @@
   }
 }
 
-.centered {
-  @include mq($break) {
-    @include center-block;
-  }
-}
 
 .card {
   flex-basis: 100%;

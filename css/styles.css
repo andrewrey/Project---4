@@ -363,6 +363,12 @@ a {
     .row {
       flex-direction: row; } }
 
+@media (min-width: 768px) {
+  .centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; } }
+
 [class^=col] {
   margin-top: 10px;
   flex-basis: 100%;
@@ -462,12 +468,6 @@ a {
 @media (min-width: 768px) {
   .col-12 {
     flex-basis: 100%; } }
-
-@media (min-width: 768px) {
-  .centered {
-    display: block;
-    margin-right: auto;
-    margin-left: auto; } }
 
 .card {
   flex-basis: 100%; }
